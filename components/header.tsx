@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ModeToggle } from './theme-toggler';
 import SearchInput from './search-input';
+import GenreDropdown from './genre-dropdown';
 
 function Header() {
   return (
@@ -16,6 +17,7 @@ function Header() {
         />
       </Link>
       <div className="flex space-x-2">
+        <GenreDropdown />
         <SearchInput />
         <ModeToggle />
       </div>
